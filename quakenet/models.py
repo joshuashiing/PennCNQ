@@ -92,9 +92,11 @@ class ConvNetQuake(tflib.model.BaseModel):
     with tf.name_scope('loss'):
       # change target range from -1:n_clusters-1 to 0:n_clusters
       targets = tf.add(self.inputs['cluster_id'], self.config.add)
+      # GXTEST
       raw_loss = tf.reduce_mean(
-        tf.nn.sparse_softmax_cross_entropy_with_logits(self.layers['logits'], targets))
-      self.summaries.append(tf.scalar_summary('loss/train_raw', raw_loss))
+        tf.nn.sparse_softmax_cross_entropy_with_logits(labels=targets, logits=self.layers['logits']))
+      self.summaries.append(tf.summary.scalar('loss/train_raw', raw_loss))
+      # GXTEST
 
     self.loss = raw_loss
 
@@ -102,10 +104,14 @@ class ConvNetQuake(tflib.model.BaseModel):
     if reg_losses:
       with tf.name_scope('regularizers'):
         reg_loss = sum(reg_losses)
-        self.summaries.append(tf.scalar_summary('loss/regularization', reg_loss))
+	# GXTEST
+        self.summaries.append(tf.summary.scalar('loss/regularization', reg_loss))
+	# GXTEST
       self.loss += reg_loss
 
-    self.summaries.append(tf.scalar_summary('loss/train', self.loss))
+    # GXTEST
+    self.summaries.append(tf.summary.scalar('loss/train', self.loss))
+    # GXTEST
 
     with tf.name_scope('accuracy'):
       is_true_event = tf.cast(tf.greater(targets, tf.zeros_like(targets)), tf.int64)
@@ -114,8 +120,10 @@ class ConvNetQuake(tflib.model.BaseModel):
       is_correct = tf.equal(self.layers['class_prediction'], targets)
       self.detection_accuracy = tf.reduce_mean(tf.to_float(detection_is_correct))
       self.localization_accuracy = tf.reduce_mean(tf.to_float(is_correct))
-      self.summaries.append(tf.scalar_summary('detection_accuracy/train', self.detection_accuracy))
-      self.summaries.append(tf.scalar_summary('localization_accuracy/train', self.localization_accuracy))
+      # GXTEST
+      self.summaries.append(tf.summary.scalar('detection_accuracy/train', self.detection_accuracy))
+      self.summaries.append(tf.summary.scalar('localization_accuracy/train', self.localization_accuracy))
+      # GXTEST
 
   def _setup_optimizer(self, learning_rate):
     update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)

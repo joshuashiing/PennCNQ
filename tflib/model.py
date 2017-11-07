@@ -168,7 +168,9 @@ class BaseModel(object):
     lr = tf.Variable(learning_rate, name='learning_rate',
         trainable=False,
         collections=[tf.GraphKeys.VARIABLES])
-    self.summaries.append(tf.scalar_summary('learning_rate', lr))
+    # GXTEST
+    self.summaries.append(tf.summary.scalar('learning_rate', lr))
+    # GXTEST
 
     # Optimizer
     self._setup_loss()
@@ -183,10 +185,14 @@ class BaseModel(object):
       run_metadata = None
 
     # Summaries
-    self.merged_summaries = tf.merge_summary(self.summaries)
+    # GXTEST
+    self.merged_summaries = tf.summary.merge(self.summaries)
+    # GXTEST
 
     with tf.Session() as sess:
-      self.summary_writer = tf.train.SummaryWriter(self.checkpoint_dir, sess.graph)
+      # GXTEST
+      self.summary_writer = tf.summary.FileWriter(self.checkpoint_dir, sess.graph)
+      # GXTEST
 
       print 'Initializing all variables.'
       tf.initialize_local_variables().run()
