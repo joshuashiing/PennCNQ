@@ -32,7 +32,10 @@ class BaseModel(object):
 
     self.global_step = tf.Variable(0, name='global_step', trainable=False)
     self._setup_prediction()
-    self.saver = tf.train.Saver(tf.all_variables(),max_to_keep=100)
+    # GXTEST
+    # self.saver = tf.train.Saver(tf.all_variables(),max_to_keep=100)
+    self.saver = tf.train.Saver(tf.global_variables(), max_to_keep=100)
+    # GXTEST
 
   @abc.abstractmethod
   def _setup_prediction(self):
@@ -167,7 +170,10 @@ class BaseModel(object):
     """
     lr = tf.Variable(learning_rate, name='learning_rate',
         trainable=False,
-        collections=[tf.GraphKeys.VARIABLES])
+        # GXTEST
+        # collections=[tf.GraphKeys.VARIABLES])
+        collections = [tf.GraphKeys.GLOBAL_VARIABLES])
+        # GXTEST
     # GXTEST
     self.summaries.append(tf.summary.scalar('learning_rate', lr))
     # GXTEST

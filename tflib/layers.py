@@ -19,7 +19,10 @@ def conv(inputs,
       shape=[ksize, ksize, n_in, nfilters],
       dtype=inputs.dtype.base_dtype,
       initializer=initializer,
-      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      # GXTEST
+      # collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.GLOBAL_VARIABLES],
+      # GXTEST
       regularizer=regularizer)
 
     strides = [1, stride, stride, 1]
@@ -31,7 +34,10 @@ def conv(inputs,
         shape=[nfilters,],
         dtype=inputs.dtype.base_dtype,
         initializer=tf.constant_initializer(0.0),
-        collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+        # GXTEST
+        # collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+        collections = [tf.GraphKeys.BIASES, tf.GraphKeys.GLOBAL_VARIABLES])
+        # GXTEST
       current_layer = tf.nn.bias_add(current_layer, biases)
 
     if activation_fn is not None:
@@ -57,7 +63,10 @@ def transpose_conv(inputs,
       shape=[ksize, ksize, n_in, nfilters],
       dtype=inputs.dtype.base_dtype,
       initializer=initializer,
-      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      # GXTEST
+      # collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.GLOBAL_VARIABLES],
+      # GXTEST
       regularizer=regularizer)
 
     bs, h, w, c = inputs.get_shape().as_list()
@@ -71,7 +80,10 @@ def transpose_conv(inputs,
         shape=[nfilters,],
         dtype=inputs.dtype.base_dtype,
         initializer=tf.constant_initializer(0.0),
-        collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+        # GXTEST
+        # collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+        collections = [tf.GraphKeys.BIASES, tf.GraphKeys.GLOBAL_VARIABLES])
+        # GXTEST
       current_layer = tf.nn.bias_add(current_layer, biases)
 
     if activation_fn is not None:
@@ -97,7 +109,10 @@ def conv1(inputs,
       shape=[ksize, n_in, nfilters],
       dtype=inputs.dtype.base_dtype,
       initializer=initializer,
-      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      # GXTEST
+      # collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.GLOBAL_VARIABLES],
+      # GXTEST
       regularizer=regularizer)
 
     current_layer = tf.nn.conv1d(inputs, weights, stride, padding=padding)
@@ -108,7 +123,10 @@ def conv1(inputs,
         shape=[nfilters,],
         dtype=inputs.dtype.base_dtype,
         initializer=tf.constant_initializer(0.0),
-        collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+        # GXTEST
+        # collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+        collections = [tf.GraphKeys.BIASES, tf.GraphKeys.GLOBAL_VARIABLES])
+        # GXTEST
       current_layer = tf.nn.bias_add(current_layer, biases)
 
     if activation_fn is not None:
@@ -138,7 +156,10 @@ def atrous_conv1d(inputs,
       shape=[ksize, 1, n_in, nfilters],
       dtype=inputs.dtype.base_dtype,
       initializer=initializer,
-      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      # GXTEST
+      # collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.GLOBAL_VARIABLES],
+      # GXTEST
       regularizer=regularizer)
 
     current_layer = tf.nn.atrous_conv2d(inputs,weights, rate, padding=padding)
@@ -152,7 +173,10 @@ def atrous_conv1d(inputs,
         shape=[nfilters,],
         dtype=inputs.dtype.base_dtype,
         initializer=tf.constant_initializer(0.0),
-        collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+        # GXTEST
+        # collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+        collections = [tf.GraphKeys.BIASES, tf.GraphKeys.GLOBAL_VARIABLES])
+        # GXTEST
       current_layer = tf.nn.bias_add(current_layer, biases)
 
     if activation_fn is not None:
@@ -180,7 +204,10 @@ def conv3(inputs,
       shape=[ksize, ksize, ksize, n_in, nfilters],
       dtype=inputs.dtype.base_dtype,
       initializer=initializer,
-      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      # GXTEST
+      # collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.VARIABLES],
+      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.GLOBAL_VARIABLES],
+      # GXTEST
       regularizer=regularizer)
 
     strides = [1, stride, stride, stride, 1]
@@ -192,7 +219,10 @@ def conv3(inputs,
         shape=[nfilters,],
         dtype=inputs.dtype.base_dtype,
         initializer=tf.constant_initializer(0.0),
-        collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+        # GXTEST
+        # collections=[tf.GraphKeys.BIASES, tf.GraphKeys.VARIABLES])
+      collections = [tf.GraphKeys.BIASES, tf.GraphKeys.GLOBAL_VARIABLES])
+        # GXTEST
       current_layer = tf.nn.bias_add(current_layer, biases)
 
     if activation_fn is not None:
