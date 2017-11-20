@@ -89,6 +89,11 @@ def main(_):
     # Create dir to store tfrecords
     if not os.path.exists(FLAGS.output_dir):
         os.makedirs(FLAGS.output_dir)
+    # GXTEST
+    output_tfrecords_dir = os.path.join(FLAGS.output_dir, 'tfrecords')
+    if not os.path.exists(output_tfrecords_dir):
+        os.makedirs(output_tfrecords_dir)
+    # GXTEST
 
     # Dictionary of nb of events per tfrecords
     metadata = {}
@@ -122,7 +127,10 @@ def main(_):
 
         # Write event waveforms and cluster_id in .tfrecords
         output_name = stream_file.split(".mseed")[0] + ".tfrecords"
-        output_path = os.path.join(FLAGS.output_dir, output_name)
+        # GXTEST
+        # output_path = os.path.join(FLAGS.output_dir, output_name)
+        output_path = os.path.join(output_tfrecords_dir, output_name)
+        # GXTEST
         writer = DataWriter(output_path)
         print("+ Creating tfrecords for {} events".format(filtered_catalog.shape[0]))
         # Loop over all events in the considered stream

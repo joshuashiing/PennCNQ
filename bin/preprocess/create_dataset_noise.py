@@ -63,6 +63,11 @@ def main(_):
 # Create dir to store tfrecords
     if not os.path.exists(FLAGS.output_dir):
         os.makedirs(FLAGS.output_dir)
+    # GXTEST
+    output_tfrecords_dir = os.path.join(FLAGS.output_dir, 'tfrecords')
+    if not os.path.exists(output_tfrecords_dir):
+        os.makedirs(output_tfrecords_dir)
+    # GXTEST
 
     # Load stream
     stream_path = FLAGS.stream_path
@@ -92,7 +97,10 @@ def main(_):
     n_tfrecords = 0
     output_name = "noise_" + stream_file.split(".mseed")[0] + \
                   "_" + str(n_tfrecords) + ".tfrecords"
-    output_path = os.path.join(FLAGS.output_dir, output_name)
+    # GXTEST
+    # output_path = os.path.join(FLAGS.output_dir, output_name)
+    output_path = os.path.join(output_tfrecords_dir, output_name)
+    # GXTEST
     writer = DataWriter(output_path)
 
     # Create window generator
@@ -142,6 +150,15 @@ def main(_):
             if (len(win)==3) and (n_pts == n_samples):
                 # Write tfrecords
                 writer.write(win,-1)
+                # GXTEST
+                if FLAGS.save_mseed:
+                    output_label = 'noise_' + stream_file.split(".mseed")[0] + '_%.7i.mseed' % (idx)
+                    output_mseed_dir = os.path.join(FLAGS.output_dir, "mseed")
+                    if not os.path.exists(output_mseed_dir):
+                        os.makedirs(output_mseed_dir)
+                    output_mseed = os.path.join(output_mseed_dir, output_label)
+                    win.write(output_mseed, format="MSEED")
+                # GXTEST
                 # Plot events
                 if FLAGS.plot:
                     trace = win[0]
