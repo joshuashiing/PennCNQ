@@ -176,7 +176,7 @@ def main(_):
             n_tfrecords +=1
             output_name = "noise_" + stream_file.split(".mseed")[0] + \
                           "_" + str(n_tfrecords) + ".tfrecords"
-            output_path = os.path.join(FLAGS.output_dir, output_name)
+            output_path = os.path.join(output_tfrecords_dir, output_name)
             writer = DataWriter(output_path)
 
         if idx == max_windows:
