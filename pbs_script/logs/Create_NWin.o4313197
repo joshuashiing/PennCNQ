@@ -1,0 +1,27 @@
+Host name: comp-bc-0070.acib.production.int.aci.ics.psu.edu
+Job Begin: Mon Nov 20 01:25:45 EST 2017
+usage: create_dataset_noise.py [-h] [--stream_path STREAM_PATH]
+                               [--catalog CATALOG] [--output_dir OUTPUT_DIR]
+                               [--plot [PLOT]] [--noplot]
+                               [--window_size WINDOW_SIZE]
+                               [--window_step WINDOW_STEP]
+                               [--max_windows MAX_WINDOWS]
+                               [--save_mseed [SAVE_MSEED]] [--nosave_mseed]
+create_dataset_noise.py: error: argument --output_dir: expected one argument
+usage: create_dataset_noise.py [-h] [--stream_path STREAM_PATH]
+                               [--catalog CATALOG] [--output_dir OUTPUT_DIR]
+                               [--plot [PLOT]] [--noplot]
+                               [--window_size WINDOW_SIZE]
+                               [--window_step WINDOW_STEP]
+                               [--max_windows MAX_WINDOWS]
+                               [--save_mseed [SAVE_MSEED]] [--nosave_mseed]
+create_dataset_noise.py: error: argument --output_dir: expected one argument
+usage: create_dataset_noise.py [-h] [--stream_path STREAM_PATH]
+                               [--catalog CATALOG] [--output_dir OUTPUT_DIR]
+                               [--plot [PLOT]] [--noplot]
+                               [--window_size WINDOW_SIZE]
+                               [--window_step WINDOW_STEP]
+                               [--max_windows MAX_WINDOWS]
+                               [--save_mseed [SAVE_MSEED]] [--nosave_mseed]
+create_dataset_noise.py: error: argument --output_dir: expected one argument
+Job End: Mon Nov 20 01:26:51 EST 2017

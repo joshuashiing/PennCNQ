@@ -14,10 +14,10 @@ echo "Job Begin: `date`"
 wkdir=/storage/home/gux8/work/Research/PennCNQ
 cd ${wkdir}
 
-./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_8-2014.mseed --catalog data/catalogs/Benz_catalog.csv --output_dir --max_windows 5000 --save_mseed True data/EvN/NWin_GSOK029_2014_08_5000
+./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_8-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 5000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_08_5000
 
-./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_6-2014.mseed --catalog data/catalogs/Benz_catalog.csv --output_dir --max_windows 5000 --save_mseed True data/EvN/NWin_GSOK029_2014_06_5000
+./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_6-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 5000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_06_5000
 
-./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_4-2014.mseed --catalog data/catalogs/Benz_catalog.csv --output_dir --max_windows 5000 --save_mseed True data/EvN/NWin_GSOK029_2014_04_5000
+./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_4-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 5000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_04_5000
 
 echo "Job End: `date`"
