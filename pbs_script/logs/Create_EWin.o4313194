@@ -1,0 +1,38 @@
+Host name: comp-bc-0070.acib.production.int.aci.ics.psu.edu
+Job Begin: Mon Nov 20 01:08:18 EST 2017
+/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/obspy/io/mseed/core.py:772: UserWarning: The encoding specified in trace.stats.mseed.encoding does not match the dtype of the data.
+A suitable encoding will be chosen.
+  warnings.warn(msg, UserWarning)
+List of streams to anlayze ['GSOK029_11-2016.mseed', 'GSOK029_1-2015.mseed', 'GSOK029_7-2015.mseed', 'GSOK029_9-2015.mseed', 'GSOK029_7-2016.mseed', 'GSOK027_5-2014.mseed', 'GSOK029_8-2015.mseed', 'GSOK027_9-2014.mseed', 'GSOK029_12-2016.mseed', 'GSOK027_10-2014.mseed', 'GSOK029_6-2015.mseed', 'GSOK029_5-2014.mseed', 'GSOK029_4-2016.mseed', 'GSOK029_4-2015.mseed', 'GSOK027_4-2014.mseed', 'GSOK029_2-2014.mseed', 'GSOK029_6-2016.mseed', 'GSOK029_2-2016.mseed', 'GSOK027_2-2015.mseed', 'GSOK029_2-2015.mseed', 'GSOK029_4-2014.mseed', 'GSOK029_3-2016.mseed', 'GSOK029_12-2015.mseed', 'GSOK027_3-2015.mseed', 'GSOK029_3-2015.mseed', 'GSOK027_11-2014.mseed', 'GSOK029_11-2015.mseed', 'GSOK029_12-2014.mseed', 'GSOK029_10-2014.mseed', 'GSOK027_2-2014.mseed', 'GSOK029_11-2014.mseed', 'GSOK029_9-2016.mseed', 'GSOK029_8-2014.mseed', 'GSOK029_6-2014.mseed', 'GSOK027_3-2014.mseed', 'GSOK029_10-2016.mseed', 'GSOK029_8-2016.mseed', 'GSOK029_5-2016.mseed', 'GSOK027_6-2014.mseed', 'GSOK029_5-2015.mseed', 'GSOK027_8-2014.mseed', 'GSOK027_1-2015.mseed', 'GSOK029_1-2016.mseed', 'GSOK029_9-2014.mseed', 'GSOK027_12-2014.mseed', 'GSOK029_10-2015.mseed', 'GSOK029_3-2014.mseed']
++ Loading Catalog
++ Loading Stream GSOK029_11-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-11-01T00:00:00.005000Z, End Date=2016-11-16T23:59:58.995000Z
++ Creating tfrecords for 2 events
+Traceback (most recent call last):
+  File "./bin/preprocess/create_dataset_events.py", line 176, in <module>
+    tf.app.run()
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/tensorflow/python/platform/app.py", line 48, in run
+    _sys.exit(main(_sys.argv[:1] + flags_passthrough))
+  File "./bin/preprocess/create_dataset_events.py", line 163, in main
+    "event_{}.png".format(event_n)))
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/obspy/core/trace.py", line 891, in plot
+    return waveform.plot_waveform(**kwargs)
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/obspy/imaging/waveform.py", line 269, in plot_waveform
+    self.__setup_figure()
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/obspy/imaging/waveform.py", line 1400, in __setup_figure
+    float(self.height) / self.dpi))
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/matplotlib/pyplot.py", line 534, in figure
+    **kwargs)
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/matplotlib/backend_bases.py", line 170, in new_figure_manager
+    return cls.new_figure_manager_given_figure(num, fig)
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/matplotlib/backend_bases.py", line 176, in new_figure_manager_given_figure
+    canvas = cls.FigureCanvas(figure)
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/matplotlib/backends/backend_qt5agg.py", line 35, in __init__
+    super(FigureCanvasQTAggBase, self).__init__(figure=figure)
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/matplotlib/backends/backend_qt5.py", line 235, in __init__
+    _create_qApp()
+  File "/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/matplotlib/backends/backend_qt5.py", line 122, in _create_qApp
+    raise RuntimeError('Invalid DISPLAY variable')
+RuntimeError: Invalid DISPLAY variable
+Job End: Mon Nov 20 01:08:33 EST 2017
