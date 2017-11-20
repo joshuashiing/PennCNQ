@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -N Train
+#PBS -M joshuashiing2011@gmail.com
+#PBS -m abe
+#PBS -A open
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=06:00:00
+#PBS -j oe
+#PBS -o ./logs
+
+echo "Host name: `hostname`"
+echo "Job Begin: `date`"
+
+wkdir=/storage/home/gux8/work/Research/PennCNQ
+cd ${wkdir}
+./bin/train --dataset data/6_clusters/train --checkpoint_dir output/convnetquake --n_clusters 6
+
+echo "Job End: `date`"
