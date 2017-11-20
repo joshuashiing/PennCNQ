@@ -118,10 +118,19 @@ class BaseModel(object):
     Args:
       sess (tf.Session): current session from which the parameters are saved.
     """
+    # GXTEST
     checkpoint_path = os.path.join(self.checkpoint_dir, 'model')
     if not os.path.exists(self.checkpoint_dir):
       os.makedirs(self.checkpoint_dir)
-    self.saver.save(sess, checkpoint_path, global_step=self.global_step)
+    # if not os.path.exists(checkpoint_path):
+    #   os.makedirs(checkpoint_path)
+    # self.saver.save(sess, checkpoint_path, global_step=self.global_step)
+    if sess.run(self.global_step) > 500:
+      self.saver.save(sess, checkpoint_path, global_step=self.global_step, write_meta_graph = False)
+    else:
+      self.saver.save(sess, checkpoint_path, global_step=self.global_step)
+    # GXTEST
+
 
   def test(self,n_val_steps):
     """Run predictions and print accuracy
@@ -201,8 +210,11 @@ class BaseModel(object):
       # GXTEST
 
       print 'Initializing all variables.'
-      tf.initialize_local_variables().run()
-      tf.initialize_all_variables().run()
+      # GXTEST
+      # tf.initialize_local_variables().run()
+      # tf.initialize_all_variables().run()
+      tf.local_variables_initializer().run()
+      tf.global_variables_initializer().run()
       if resume:
         self.load(sess)
 

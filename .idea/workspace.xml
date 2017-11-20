@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a850f28-bfce-4672-8065-50137346e60c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tflib/layers.py" afterPath="$PROJECT_DIR$/tflib/layers.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PennCNQ.iml" afterPath="$PROJECT_DIR$/.idea/PennCNQ.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tflib/model.py" afterPath="$PROJECT_DIR$/tflib/model.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +19,8 @@
       <file leaf-file-name="train" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/train">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+            <state relative-caret-position="193">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="e#366#381#0" expanded="true" />
               </folding>
@@ -26,65 +28,65 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="predict_from_stream.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/predict_from_stream.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2004">
+              <caret line="212" column="0" lean-forward="true" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+              <folding>
+                <element signature="e#694#703#0" expanded="true" />
+                <element signature="e#1883#1948#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convert_stream_to_tfrecords.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/preprocess/convert_stream_to_tfrecords.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="67" column="32" lean-forward="true" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="session.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/cnq/lib/python2.7/site-packages/tensorflow/python/client/session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="889" column="0" lean-forward="false" selection-start-line="889" selection-start-column="0" selection-end-line="889" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quakenet/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="141" column="44" lean-forward="true" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
+            <state relative-caret-position="452">
+              <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding>
                 <element signature="e#522#531#0" expanded="true" />
                 <element signature="e#1459#2645#0" expanded="false" />
                 <element signature="e#2684#2975#0" expanded="false" />
                 <element signature="e#3030#3208#0" expanded="false" />
                 <element signature="e#3239#4821#0" expanded="false" />
+                <element signature="e#4872#5247#0" expanded="false" />
+                <element signature="e#5275#5468#0" expanded="false" />
                 <element signature="e#5512#6165#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tflib/layers.py">
+      <file leaf-file-name="create_dataset_events.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/preprocess/create_dataset_events.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-757">
-              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="338">
+              <caret line="154" column="29" lean-forward="false" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#342#1440#0" expanded="false" />
-                <element signature="e#1750#2960#0" expanded="false" />
-                <element signature="e#3261#4314#0" expanded="false" />
-                <element signature="e#4691#5976#0" expanded="false" />
-                <element signature="e#6279#7390#0" expanded="false" />
-                <element signature="e#7580#8244#0" expanded="false" />
-                <element signature="e#8400#8601#0" expanded="false" />
-                <element signature="e#8664#8925#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tflib/model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-757">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#1315#1363#0" expanded="false" />
-                <element signature="e#1416#1457#0" expanded="false" />
-                <element signature="e#1530#1555#0" expanded="false" />
-                <element signature="e#1605#1719#0" expanded="false" />
-                <element signature="e#2336#2780#0" expanded="false" />
-                <element signature="e#2841#2986#0" expanded="false" />
-                <element signature="e#3027#3565#0" expanded="false" />
-                <element signature="e#3595#3947#0" expanded="false" />
-                <element signature="e#3983#5171#0" expanded="false" />
-                <element signature="e#6145#6248#0" expanded="false" />
-                <element signature="e#6265#6309#0" expanded="false" />
-                <element signature="e#6452#8458#0" expanded="false" />
-                <element signature="e#7233#7577#0" expanded="false" />
-                <element signature="e#8001#8078#0" expanded="false" />
-                <element signature="e#8128#8203#0" expanded="false" />
+                <element signature="e#680#689#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,9 +95,38 @@
       <file leaf-file-name="data_pipeline.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quakenet/data_pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="145" column="39" lean-forward="false" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
-              <folding />
+            <state relative-caret-position="255">
+              <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+              <folding>
+                <element signature="e#368#2221#0" expanded="false" />
+                <element signature="e#2255#4053#0" expanded="false" />
+                <element signature="e#4089#5974#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tflib/model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="111" column="6" lean-forward="false" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#356#1256#0" expanded="false" />
+                <element signature="e#1315#1363#0" expanded="false" />
+                <element signature="e#1416#1457#0" expanded="false" />
+                <element signature="e#1530#1555#0" expanded="false" />
+                <element signature="e#1605#1719#0" expanded="false" />
+                <element signature="e#1805#2251#0" expanded="false" />
+                <element signature="e#2336#2780#0" expanded="false" />
+                <element signature="e#2841#2986#0" expanded="false" />
+                <element signature="e#4322#5510#0" expanded="false" />
+                <element signature="e#6484#6587#0" expanded="false" />
+                <element signature="e#7682#8026#0" expanded="false" />
+                <element signature="e#8450#8527#0" expanded="false" />
+                <element signature="e#8577#8652#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,6 +141,16 @@
       <find>variables</find>
       <find>localization_accuracy</find>
       <find>_train_step</find>
+      <find>read</find>
+      <find>save</find>
+      <find>checkpoint_dir</find>
+      <find>step</find>
+      <find>saver</find>
+      <find>win_gen</find>
+      <find>data_is_complete</find>
+      <find>local_va</find>
+      <find>fetch_window_data</find>
+      <find>events_dic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,15 +160,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/tflib/layers.py" />
+        <option value="$PROJECT_DIR$/bin/predict_from_stream.py" />
         <option value="$PROJECT_DIR$/tflib/model.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2267" />
-    <option name="y" value="28" />
-    <option name="width" value="1438" />
-    <option name="height" value="848" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="82" />
+    <option name="y" value="64" />
+    <option name="width" value="1274" />
+    <option name="height" value="786" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -162,6 +204,12 @@
             <path>
               <item name="PennCNQ" type="b2602c69:ProjectViewProjectNode" />
               <item name="PennCNQ" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="preprocess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PennCNQ" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PennCNQ" type="462c0819:PsiDirectoryNode" />
               <item name="quakenet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -178,7 +226,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/train" />
+    <property name="last_opened_file_path" value="$USER_HOME$/anaconda3/envs/cnq/bin/python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -193,21 +241,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.2.4.1_train">
+  <component name="RunManager" selected="Python.3.1_predict_from_stream">
     <configuration name="2.1_cluster_events" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/Softwares/anaconda3/envs/cnq/bin/python" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cnq/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PennCNQ" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/preprocess/cluster_events" />
-      <option name="PARAMETERS" value="--src data/catalogs/OK_2014-2015-2016.csv --dst data/6_clusters --n_components 6 --model KMeans" />
+      <option name="PARAMETERS" value="--src data/catalogs/OK_2014-2015-2016.csv --dst data/1_cluster --n_components 1 --model KMeans" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
@@ -217,14 +265,14 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/Softwares/anaconda3/envs/cnq/bin/python" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cnq/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PennCNQ" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/preprocess/create_dataset_events.py" />
-      <option name="PARAMETERS" value="--stream_dir data/streams --catalog data/6_clusters/catalog_with_cluster_ids.csv --output_dir data/6_clusters/events --save_mseed True --plot True" />
+      <option name="PARAMETERS" value="--stream_dir data/streams --catalog data/1_cluster/catalog_with_cluster_ids.csv --output_dir data/1_cluster/events --save_mseed True --plot True" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
@@ -251,22 +299,40 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/Softwares/anaconda3/envs/cnq/bin/python" />
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cnq/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PennCNQ" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/train" />
-      <option name="PARAMETERS" value="--dataset data/6_clusters/train --checkpoint_dir output/convnetquake --n_clusters 6" />
+      <option name="PARAMETERS" value="--dataset data/1_cluster/train --checkpoint_dir output/bin_001 --n_clusters 1" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
+    <configuration name="3.1_predict_from_stream" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/envs/cnq/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PennCNQ" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/predict_from_stream.py" />
+      <option name="PARAMETERS" value="--stream_path data/streams/GSOK027_4-2014.mseed --checkpoint_dir output/bin_001/ConvNetQuake --n_clusters 1 --window_step 11 --output output/july_detections/from_stream --max_windows 8640" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.2.1_cluster_events" />
       <item index="1" class="java.lang.String" itemvalue="Python.2.2.1_create_dataset_events" />
       <item index="2" class="java.lang.String" itemvalue="Python.2.3.1_create_dataset_noise" />
       <item index="3" class="java.lang.String" itemvalue="Python.2.4.1_train" />
+      <item index="4" class="java.lang.String" itemvalue="Python.3.1_predict_from_stream" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -282,27 +348,36 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="2267" y="28" width="1857" height="1092" extended-state="6" />
+    <frame x="82" y="64" width="1274" height="786" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19353099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21834415" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299566" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35890016" sideWeight="0.5032467" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3599182" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35890016" sideWeight="0.49675325" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39942113" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -311,23 +386,426 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/bin/preprocess/create_dataset_events.py</url>
-          <line>149</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/bin/train</url>
-          <line>67</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="36" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="76" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/quakenet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding>
+            <element signature="e#522#531#0" expanded="true" />
+            <element signature="e#1459#2645#0" expanded="false" />
+            <element signature="e#2684#2975#0" expanded="false" />
+            <element signature="e#3030#3208#0" expanded="false" />
+            <element signature="e#3239#4821#0" expanded="false" />
+            <element signature="e#4872#5247#0" expanded="false" />
+            <element signature="e#5275#5468#0" expanded="false" />
+            <element signature="e#5512#6165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/preprocess/create_dataset_events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="154" column="29" lean-forward="true" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
+          <folding>
+            <element signature="e#680#689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/data_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="168" column="0" lean-forward="true" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding>
+            <element signature="e#368#2221#0" expanded="false" />
+            <element signature="e#2255#4053#0" expanded="false" />
+            <element signature="e#4089#5974#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#356#1256#0" expanded="false" />
+            <element signature="e#1315#1363#0" expanded="false" />
+            <element signature="e#1416#1457#0" expanded="false" />
+            <element signature="e#1530#1555#0" expanded="false" />
+            <element signature="e#1605#1719#0" expanded="false" />
+            <element signature="e#1805#2251#0" expanded="false" />
+            <element signature="e#2336#2780#0" expanded="false" />
+            <element signature="e#2841#2986#0" expanded="false" />
+            <element signature="e#4322#5510#0" expanded="false" />
+            <element signature="e#6484#6587#0" expanded="false" />
+            <element signature="e#7682#8026#0" expanded="false" />
+            <element signature="e#8450#8527#0" expanded="false" />
+            <element signature="e#8577#8652#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#366#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="e#522#531#0" expanded="true" />
+            <element signature="e#1459#2645#0" expanded="false" />
+            <element signature="e#2684#2975#0" expanded="false" />
+            <element signature="e#3030#3208#0" expanded="false" />
+            <element signature="e#3239#4821#0" expanded="false" />
+            <element signature="e#4872#5247#0" expanded="false" />
+            <element signature="e#5275#5468#0" expanded="false" />
+            <element signature="e#5512#6165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="235" column="27" lean-forward="true" selection-start-line="235" selection-start-column="27" selection-end-line="235" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#356#1256#0" expanded="false" />
+            <element signature="e#1315#1363#0" expanded="false" />
+            <element signature="e#1416#1457#0" expanded="false" />
+            <element signature="e#1530#1555#0" expanded="false" />
+            <element signature="e#1605#1719#0" expanded="false" />
+            <element signature="e#1805#2251#0" expanded="false" />
+            <element signature="e#2336#2780#0" expanded="false" />
+            <element signature="e#2841#2986#0" expanded="false" />
+            <element signature="e#4322#5510#0" expanded="false" />
+            <element signature="e#6484#6587#0" expanded="false" />
+            <element signature="e#7682#8026#0" expanded="false" />
+            <element signature="e#8450#8527#0" expanded="false" />
+            <element signature="e#8577#8652#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#366#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/preprocess/create_dataset_events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2265">
+          <caret line="160" column="7" lean-forward="true" selection-start-line="160" selection-start-column="7" selection-end-line="160" selection-end-column="7" />
+          <folding>
+            <element signature="e#680#689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/synth_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="141" column="44" lean-forward="false" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
+          <folding>
+            <element signature="e#522#531#0" expanded="true" />
+            <element signature="e#1459#2645#0" expanded="false" />
+            <element signature="e#2684#2975#0" expanded="false" />
+            <element signature="e#3030#3208#0" expanded="false" />
+            <element signature="e#3239#4821#0" expanded="false" />
+            <element signature="e#4872#5247#0" expanded="false" />
+            <element signature="e#5275#5468#0" expanded="false" />
+            <element signature="e#5512#6165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#356#1256#0" expanded="false" />
+            <element signature="e#1315#1363#0" expanded="false" />
+            <element signature="e#1416#1457#0" expanded="false" />
+            <element signature="e#1530#1555#0" expanded="false" />
+            <element signature="e#1605#1719#0" expanded="false" />
+            <element signature="e#1805#2251#0" expanded="false" />
+            <element signature="e#2336#2780#0" expanded="false" />
+            <element signature="e#2841#2986#0" expanded="false" />
+            <element signature="e#4322#5510#0" expanded="false" />
+            <element signature="e#6484#6587#0" expanded="false" />
+            <element signature="e#7682#8026#0" expanded="false" />
+            <element signature="e#8450#8527#0" expanded="false" />
+            <element signature="e#8577#8652#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/data_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="145" column="39" lean-forward="false" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
+          <folding>
+            <element signature="e#368#2221#0" expanded="false" />
+            <element signature="e#2255#4053#0" expanded="false" />
+            <element signature="e#4089#5974#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#366#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/synth_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="141" column="44" lean-forward="false" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
+          <folding>
+            <element signature="e#522#531#0" expanded="true" />
+            <element signature="e#1459#2645#0" expanded="false" />
+            <element signature="e#2684#2975#0" expanded="false" />
+            <element signature="e#3030#3208#0" expanded="false" />
+            <element signature="e#3239#4821#0" expanded="false" />
+            <element signature="e#4872#5247#0" expanded="false" />
+            <element signature="e#5275#5468#0" expanded="false" />
+            <element signature="e#5512#6165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#356#1256#0" expanded="false" />
+            <element signature="e#1315#1363#0" expanded="false" />
+            <element signature="e#1416#1457#0" expanded="false" />
+            <element signature="e#1530#1555#0" expanded="false" />
+            <element signature="e#1605#1719#0" expanded="false" />
+            <element signature="e#1805#2251#0" expanded="false" />
+            <element signature="e#2336#2780#0" expanded="false" />
+            <element signature="e#2841#2986#0" expanded="false" />
+            <element signature="e#4322#5510#0" expanded="false" />
+            <element signature="e#6484#6587#0" expanded="false" />
+            <element signature="e#7682#8026#0" expanded="false" />
+            <element signature="e#8450#8527#0" expanded="false" />
+            <element signature="e#8577#8652#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/data_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="145" column="39" lean-forward="false" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
+          <folding>
+            <element signature="e#368#2221#0" expanded="false" />
+            <element signature="e#2255#4053#0" expanded="false" />
+            <element signature="e#4089#5974#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+          <folding>
+            <element signature="e#366#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="141" column="44" lean-forward="false" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
+          <folding>
+            <element signature="e#522#531#0" expanded="true" />
+            <element signature="e#1459#2645#0" expanded="false" />
+            <element signature="e#2684#2975#0" expanded="false" />
+            <element signature="e#3030#3208#0" expanded="false" />
+            <element signature="e#3239#4821#0" expanded="false" />
+            <element signature="e#4872#5247#0" expanded="false" />
+            <element signature="e#5275#5468#0" expanded="false" />
+            <element signature="e#5512#6165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#356#1256#0" expanded="false" />
+            <element signature="e#1315#1363#0" expanded="false" />
+            <element signature="e#1416#1457#0" expanded="false" />
+            <element signature="e#1530#1555#0" expanded="false" />
+            <element signature="e#1605#1719#0" expanded="false" />
+            <element signature="e#1805#2251#0" expanded="false" />
+            <element signature="e#2336#2780#0" expanded="false" />
+            <element signature="e#2841#2986#0" expanded="false" />
+            <element signature="e#4322#5510#0" expanded="false" />
+            <element signature="e#6484#6587#0" expanded="false" />
+            <element signature="e#7682#8026#0" expanded="false" />
+            <element signature="e#8450#8527#0" expanded="false" />
+            <element signature="e#8577#8652#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/data_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="145" column="39" lean-forward="false" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
+          <folding>
+            <element signature="e#368#2221#0" expanded="false" />
+            <element signature="e#2255#4053#0" expanded="false" />
+            <element signature="e#4089#5974#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+          <folding>
+            <element signature="e#366#381#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="141" column="44" lean-forward="true" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
+          <folding>
+            <element signature="e#522#531#0" expanded="true" />
+            <element signature="e#1459#2645#0" expanded="false" />
+            <element signature="e#2684#2975#0" expanded="false" />
+            <element signature="e#3030#3208#0" expanded="false" />
+            <element signature="e#3239#4821#0" expanded="false" />
+            <element signature="e#4872#5247#0" expanded="false" />
+            <element signature="e#5275#5468#0" expanded="false" />
+            <element signature="e#5512#6165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/data_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="145" column="39" lean-forward="false" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
+          <folding>
+            <element signature="e#368#2221#0" expanded="false" />
+            <element signature="e#2255#4053#0" expanded="false" />
+            <element signature="e#4089#5974#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tflib/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#356#1256#0" expanded="false" />
+            <element signature="e#1315#1363#0" expanded="false" />
+            <element signature="e#1416#1457#0" expanded="false" />
+            <element signature="e#1530#1555#0" expanded="false" />
+            <element signature="e#1605#1719#0" expanded="false" />
+            <element signature="e#1805#2251#0" expanded="false" />
+            <element signature="e#2336#2780#0" expanded="false" />
+            <element signature="e#2841#2986#0" expanded="false" />
+            <element signature="e#4322#5510#0" expanded="false" />
+            <element signature="e#6484#6587#0" expanded="false" />
+            <element signature="e#7682#8026#0" expanded="false" />
+            <element signature="e#8450#8527#0" expanded="false" />
+            <element signature="e#8577#8652#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/train">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -342,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -350,7 +827,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2520">
           <caret line="147" column="29" lean-forward="true" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#368#2221#0" expanded="false" />
+            <element signature="e#2255#4053#0" expanded="false" />
+            <element signature="e#4089#5974#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -368,16 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/preprocess/create_dataset_events.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="142" column="31" lean-forward="false" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
-          <folding>
-            <element signature="e#680#689#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quakenet/data_io.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -389,15 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quakenet/data_pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="145" column="39" lean-forward="false" selection-start-line="145" selection-start-column="39" selection-end-line="145" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -405,74 +867,144 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="71" column="21" lean-forward="true" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
-          <folding>
-            <element signature="e#366#381#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tflib/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-757">
-          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        <state relative-caret-position="195">
+          <caret line="45" column="24" lean-forward="false" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/synth_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/predict_from_tfrecords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="32" column="15" lean-forward="false" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#342#1440#0" expanded="false" />
-            <element signature="e#1750#2960#0" expanded="false" />
-            <element signature="e#3261#4314#0" expanded="false" />
-            <element signature="e#4691#5976#0" expanded="false" />
-            <element signature="e#6279#7390#0" expanded="false" />
-            <element signature="e#7580#8244#0" expanded="false" />
-            <element signature="e#8400#8601#0" expanded="false" />
-            <element signature="e#8664#8925#0" expanded="false" />
+            <element signature="e#491#500#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/cnq/lib/python2.7/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="4189" column="51" lean-forward="true" selection-start-line="4189" selection-start-column="51" selection-end-line="4189" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/cnq/lib/python2.7/site-packages/tensorflow/python/ops/variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="260" column="0" lean-forward="false" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/cnq/lib/python2.7/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="889" column="0" lean-forward="false" selection-start-line="889" selection-start-column="0" selection-end-line="889" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quakenet/data_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="168" column="0" lean-forward="false" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
+          <folding>
+            <element signature="e#368#2221#0" expanded="false" />
+            <element signature="e#2255#4053#0" expanded="false" />
+            <element signature="e#4089#5974#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/preprocess/create_dataset_events.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="154" column="29" lean-forward="false" selection-start-line="154" selection-start-column="29" selection-end-line="154" selection-end-column="29" />
+          <folding>
+            <element signature="e#680#689#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quakenet/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="141" column="44" lean-forward="true" selection-start-line="141" selection-start-column="44" selection-end-line="141" selection-end-column="44" />
+        <state relative-caret-position="452">
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding>
             <element signature="e#522#531#0" expanded="true" />
             <element signature="e#1459#2645#0" expanded="false" />
             <element signature="e#2684#2975#0" expanded="false" />
             <element signature="e#3030#3208#0" expanded="false" />
             <element signature="e#3239#4821#0" expanded="false" />
+            <element signature="e#4872#5247#0" expanded="false" />
+            <element signature="e#5275#5468#0" expanded="false" />
             <element signature="e#5512#6165#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/train">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="e#366#381#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tflib/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-757">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="224">
+          <caret line="111" column="6" lean-forward="false" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#356#1256#0" expanded="false" />
             <element signature="e#1315#1363#0" expanded="false" />
             <element signature="e#1416#1457#0" expanded="false" />
             <element signature="e#1530#1555#0" expanded="false" />
             <element signature="e#1605#1719#0" expanded="false" />
+            <element signature="e#1805#2251#0" expanded="false" />
             <element signature="e#2336#2780#0" expanded="false" />
             <element signature="e#2841#2986#0" expanded="false" />
-            <element signature="e#3027#3565#0" expanded="false" />
-            <element signature="e#3595#3947#0" expanded="false" />
-            <element signature="e#3983#5171#0" expanded="false" />
-            <element signature="e#6145#6248#0" expanded="false" />
-            <element signature="e#6265#6309#0" expanded="false" />
-            <element signature="e#6452#8458#0" expanded="false" />
-            <element signature="e#7233#7577#0" expanded="false" />
-            <element signature="e#8001#8078#0" expanded="false" />
-            <element signature="e#8128#8203#0" expanded="false" />
+            <element signature="e#4322#5510#0" expanded="false" />
+            <element signature="e#6484#6587#0" expanded="false" />
+            <element signature="e#7682#8026#0" expanded="false" />
+            <element signature="e#8450#8527#0" expanded="false" />
+            <element signature="e#8577#8652#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/preprocess/convert_stream_to_tfrecords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="67" column="32" lean-forward="true" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/predict_from_stream.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2004">
+          <caret line="212" column="0" lean-forward="true" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+          <folding>
+            <element signature="e#694#703#0" expanded="true" />
+            <element signature="e#1883#1948#0" expanded="false" />
           </folding>
         </state>
       </provider>
