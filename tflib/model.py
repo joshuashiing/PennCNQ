@@ -124,11 +124,11 @@ class BaseModel(object):
       os.makedirs(self.checkpoint_dir)
     # if not os.path.exists(checkpoint_path):
     #   os.makedirs(checkpoint_path)
-    # self.saver.save(sess, checkpoint_path, global_step=self.global_step)
-    if sess.run(self.global_step) > 500:
-      self.saver.save(sess, checkpoint_path, global_step=self.global_step, write_meta_graph = False)
-    else:
-      self.saver.save(sess, checkpoint_path, global_step=self.global_step)
+    self.saver.save(sess, checkpoint_path, global_step=self.global_step)
+    # if sess.run(self.global_step) > 500:
+    #   self.saver.save(sess, checkpoint_path, global_step=self.global_step, write_meta_graph = False)
+    # else:
+    #   self.saver.save(sess, checkpoint_path, global_step=self.global_step)
     # GXTEST
 
 

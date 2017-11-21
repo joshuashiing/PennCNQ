@@ -87,6 +87,10 @@ class DataReader(object):
             for f in files:
                 if f.endswith(".tfrecords"):
                     fnames.append(os.path.join(root, f))
+        # GXTEST
+        if fnames == [] and self._path.endswith('.tfrecords'):
+            fnames = [self._path]
+        # GXTEST
         fname_q = tf.train.string_input_producer(fnames,
                                                  shuffle=self._shuffle,
                                                  num_epochs=self._config.n_epochs)
