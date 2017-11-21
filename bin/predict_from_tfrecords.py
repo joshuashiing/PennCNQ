@@ -86,7 +86,10 @@ def main(args):
     # Run ConvNetQuake
     with tf.Session() as sess:
         coord = tf.train.Coordinator()
-        tf.initialize_local_variables().run()
+        # GXTEST
+        tf.local_variables_initializer().run()
+        # tf.initialize_local_variables().run()
+        # GXTEST
         threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
         model.load(sess,args.step)
