@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -N Test_Set
+#PBS -M joshuashiing2011@gmail.com
+#PBS -m abe
+#PBS -A open
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=06:00:00
+#PBS -j oe
+#PBS -o ./logs
+
+echo "Host name: `hostname`"
+echo "Job Begin: `date`"
+
+wkdir=/storage/home/gux8/work/Research/PennCNQ
+cd ${wkdir}
+
+./bin/preprocess/create_dataset_events.py --stream_dir data/test_streams --catalog data/EvN/catalog_with_cluster_ids.csv --output_dir data/EvN/test_set/EWin --save_mseed True --plot True
+
+./bin/preprocess/create_dataset_noise.py --stream_path data/test_streams/GSOK029_7-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 50000 --save_mseed True --output_dir data/EvN/test_set/NWin_GSOK029_2014_07_50000 --plot True
+
+echo "Job End: `date`"

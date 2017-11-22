@@ -14,10 +14,16 @@ echo "Job Begin: `date`"
 wkdir=/storage/home/gux8/work/Research/PennCNQ
 cd ${wkdir}
 
-./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_8-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 5000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_08_5000
+./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_2-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 10000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_02_10000 --plot True
 
-./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_6-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 5000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_06_5000
+./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_3-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 10000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_03_10000 --plot True
 
-./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_4-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 5000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_04_5000
+./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_4-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 10000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_04_10000 --plot True
+
+./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_5-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 10000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_05_10000 --plot True
+
+./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_6-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 10000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_06_10000 --plot True
+
+./bin/preprocess/create_dataset_noise.py --stream_path data/streams/GSOK029_8-2014.mseed --catalog data/catalogs/Benz_catalog.csv --max_windows 10000 --save_mseed True --output_dir data/EvN/NWin_GSOK029_2014_08_10000 --plot True
 
 echo "Job End: `date`"

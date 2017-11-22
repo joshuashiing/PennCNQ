@@ -1,0 +1,246 @@
+Host name: comp-bc-0167.acib.production.int.aci.ics.psu.edu
+Job Begin: Tue Nov 21 20:20:58 EST 2017
+/storage/home/gux8/software/anaconda3/envs/cnq/lib/python2.7/site-packages/obspy/io/mseed/core.py:772: UserWarning: The encoding specified in trace.stats.mseed.encoding does not match the dtype of the data.
+A suitable encoding will be chosen.
+  warnings.warn(msg, UserWarning)
+List of streams to anlayze ['GSOK029_11-2016.mseed', 'GSOK029_1-2015.mseed', 'GSOK029_7-2015.mseed', 'GSOK029_9-2015.mseed', 'GSOK029_7-2016.mseed', 'GSOK027_5-2014.mseed', 'GSOK029_8-2015.mseed', 'GSOK027_9-2014.mseed', 'GSOK029_12-2016.mseed', 'GSOK027_10-2014.mseed', 'GSOK029_6-2015.mseed', 'GSOK029_5-2014.mseed', 'GSOK029_4-2016.mseed', 'GSOK029_4-2015.mseed', 'GSOK027_4-2014.mseed', 'GSOK029_2-2014.mseed', 'GSOK029_6-2016.mseed', 'GSOK029_2-2016.mseed', 'GSOK027_2-2015.mseed', 'GSOK029_2-2015.mseed', 'GSOK029_4-2014.mseed', 'GSOK029_3-2016.mseed', 'GSOK029_12-2015.mseed', 'GSOK027_3-2015.mseed', 'GSOK029_3-2015.mseed', 'GSOK027_11-2014.mseed', 'GSOK029_11-2015.mseed', 'GSOK029_12-2014.mseed', 'GSOK029_10-2014.mseed', 'GSOK027_2-2014.mseed', 'GSOK029_11-2014.mseed', 'GSOK029_9-2016.mseed', 'GSOK029_8-2014.mseed', 'GSOK029_6-2014.mseed', 'GSOK027_3-2014.mseed', 'GSOK029_10-2016.mseed', 'GSOK029_8-2016.mseed', 'GSOK029_5-2016.mseed', 'GSOK027_6-2014.mseed', 'GSOK029_5-2015.mseed', 'GSOK027_8-2014.mseed', 'GSOK027_1-2015.mseed', 'GSOK029_1-2016.mseed', 'GSOK029_9-2014.mseed', 'GSOK027_12-2014.mseed', 'GSOK029_10-2015.mseed', 'GSOK029_3-2014.mseed']
++ Loading Catalog
++ Loading Stream GSOK029_11-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-11-01T00:00:00.005000Z, End Date=2016-11-16T23:59:58.995000Z
++ Creating tfrecords for 2 events
+Number of events written=1
++ Loading Stream GSOK029_1-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-01-15T18:13:14.530000Z, End Date=2015-01-31T23:59:59.000000Z
++ Creating tfrecords for 38 events
+Number of events written=38
++ Loading Stream GSOK029_7-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-07-01T00:00:00.000000Z, End Date=2015-07-31T23:59:58.995000Z
++ Creating tfrecords for 97 events
+Number of events written=97
++ Loading Stream GSOK029_9-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-09-01T00:00:00.005000Z, End Date=2015-09-30T23:59:58.995000Z
++ Creating tfrecords for 20 events
+Number of events written=19
++ Loading Stream GSOK029_7-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-07-01T00:00:00.005000Z, End Date=2016-07-31T23:59:58.995000Z
++ Creating tfrecords for 25 events
+Number of events written=25
++ Loading Stream GSOK027_5-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-05-01T00:00:00.000000Z, End Date=2014-05-31T23:59:59.000000Z
++ Creating tfrecords for 44 events
+Number of events written=44
++ Loading Stream GSOK029_8-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-08-01T00:00:00.005000Z, End Date=2015-08-31T23:59:58.995000Z
++ Creating tfrecords for 38 events
+Number of events written=38
++ Loading Stream GSOK027_9-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-09-01T00:00:00.000000Z, End Date=2014-09-30T23:59:59.000000Z
++ Creating tfrecords for 78 events
+Number of events written=77
++ Loading Stream GSOK029_12-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-12-01T00:00:00.005000Z, End Date=2016-12-31T23:59:58.995000Z
++ Creating tfrecords for 0 events
+Number of events written=0
++ Loading Stream GSOK027_10-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-10-01T00:00:00.000000Z, End Date=2014-10-31T23:59:59.000000Z
++ Creating tfrecords for 83 events
+Number of events written=62
++ Loading Stream GSOK029_6-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-06-01T00:00:00.000000Z, End Date=2015-06-30T23:59:59.000000Z
++ Creating tfrecords for 147 events
+Number of events written=147
++ Loading Stream GSOK029_5-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-05-01T00:00:00.005000Z, End Date=2014-05-31T23:59:58.995000Z
++ Creating tfrecords for 44 events
+Number of events written=44
++ Loading Stream GSOK029_4-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-04-01T00:00:00.005000Z, End Date=2016-04-30T23:59:58.995000Z
++ Creating tfrecords for 13 events
+Number of events written=13
++ Loading Stream GSOK029_4-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-04-01T00:00:00.000000Z, End Date=2015-04-30T23:59:59.000000Z
++ Creating tfrecords for 102 events
+Number of events written=102
++ Loading Stream GSOK027_4-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-04-01T00:00:00.000000Z, End Date=2014-04-30T23:59:59.000000Z
++ Creating tfrecords for 191 events
+Missing waveform for event: 2014-04-12T07:33:47.727225Z
+Number of events written=187
++ Loading Stream GSOK029_2-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-02-15T00:00:00.005000Z, End Date=2014-02-28T23:59:58.995000Z
++ Creating tfrecords for 184 events
+Number of events written=184
++ Loading Stream GSOK029_6-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-06-01T00:00:00.005000Z, End Date=2016-06-30T23:59:58.995000Z
++ Creating tfrecords for 12 events
+Number of events written=12
++ Loading Stream GSOK029_2-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-02-01T00:00:00.005000Z, End Date=2016-02-29T23:59:58.995000Z
++ Creating tfrecords for 12 events
+Number of events written=12
++ Loading Stream GSOK027_2-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-02-01T14:49:38.020000Z, End Date=2015-02-27T20:07:18.030000Z
++ Creating tfrecords for 44 events
+Number of events written=15
++ Loading Stream GSOK029_2-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-02-01T00:00:00.000000Z, End Date=2015-02-28T09:26:32.130000Z
++ Creating tfrecords for 46 events
+Number of events written=45
++ Loading Stream GSOK029_4-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-04-01T00:00:00.005000Z, End Date=2014-04-30T23:59:58.995000Z
++ Creating tfrecords for 191 events
+Number of events written=188
++ Loading Stream GSOK029_3-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-03-01T00:00:00.005000Z, End Date=2016-03-31T23:59:58.995000Z
++ Creating tfrecords for 13 events
+Number of events written=13
++ Loading Stream GSOK029_12-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-12-01T15:38:03.365000Z, End Date=2015-12-31T20:05:29.995000Z
++ Creating tfrecords for 22 events
+Number of events written=18
++ Loading Stream GSOK027_3-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-03-02T17:11:54.260000Z, End Date=2015-03-03T17:14:46.370000Z
++ Creating tfrecords for 3 events
+Number of events written=0
++ Loading Stream GSOK029_3-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-03-01T19:55:31.440000Z, End Date=2015-03-31T23:59:59.000000Z
++ Creating tfrecords for 79 events
+Number of events written=72
++ Loading Stream GSOK027_11-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-11-01T00:00:00.000000Z, End Date=2014-11-30T23:59:58.995000Z
++ Creating tfrecords for 44 events
+Number of events written=25
++ Loading Stream GSOK029_11-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-11-01T00:00:00.005000Z, End Date=2015-11-30T21:38:43.395000Z
++ Creating tfrecords for 30 events
+Number of events written=26
++ Loading Stream GSOK029_12-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-12-01T00:00:00.005000Z, End Date=2014-12-17T23:27:46.875000Z
++ Creating tfrecords for 29 events
+Number of events written=20
++ Loading Stream GSOK029_10-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-10-01T00:00:00.005000Z, End Date=2014-10-31T23:59:58.995000Z
++ Creating tfrecords for 83 events
+Number of events written=83
++ Loading Stream GSOK027_2-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-02-14T21:04:02.615000Z, End Date=2014-02-28T23:59:59.000000Z
++ Creating tfrecords for 184 events
+Number of events written=161
++ Loading Stream GSOK029_11-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-11-01T00:00:00.005000Z, End Date=2014-11-30T23:59:58.995000Z
++ Creating tfrecords for 44 events
+Number of events written=43
++ Loading Stream GSOK029_9-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-09-01T00:00:00.005000Z, End Date=2016-09-30T23:59:58.995000Z
++ Creating tfrecords for 20 events
+Number of events written=18
++ Loading Stream GSOK029_8-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-08-01T00:00:00.005000Z, End Date=2014-08-31T23:59:58.995000Z
++ Creating tfrecords for 111 events
+Number of events written=111
++ Loading Stream GSOK029_6-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-06-01T00:00:00.005000Z, End Date=2014-06-30T23:59:58.995000Z
++ Creating tfrecords for 74 events
+Number of events written=74
++ Loading Stream GSOK027_3-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-03-01T00:00:00.000000Z, End Date=2014-03-31T23:59:59.000000Z
++ Creating tfrecords for 125 events
+Missing waveform for event: 2014-03-31T23:59:52.014129Z
+Number of events written=121
++ Loading Stream GSOK029_10-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-10-01T00:00:00.005000Z, End Date=2016-10-31T23:59:58.995000Z
++ Creating tfrecords for 9 events
+Number of events written=9
++ Loading Stream GSOK029_8-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-08-01T00:00:00.005000Z, End Date=2016-08-31T23:59:58.995000Z
++ Creating tfrecords for 2 events
+Number of events written=2
++ Loading Stream GSOK029_5-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-05-01T00:00:00.005000Z, End Date=2016-05-31T23:59:58.995000Z
++ Creating tfrecords for 21 events
+Number of events written=21
++ Loading Stream GSOK027_6-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-06-01T00:00:00.000000Z, End Date=2014-06-30T23:59:59.000000Z
++ Creating tfrecords for 74 events
+Number of events written=74
++ Loading Stream GSOK029_5-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-05-01T00:00:00.000000Z, End Date=2015-05-31T23:59:59.000000Z
++ Creating tfrecords for 72 events
+Number of events written=72
++ Loading Stream GSOK027_8-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-08-01T00:00:00.000000Z, End Date=2014-08-31T23:59:59.000000Z
++ Creating tfrecords for 111 events
+Number of events written=111
++ Loading Stream GSOK027_1-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-01-15T18:13:40.460000Z, End Date=2015-01-30T23:08:19.870000Z
++ Creating tfrecords for 38 events
+Number of events written=27
++ Loading Stream GSOK029_1-2016.mseed
++ Preprocessing stream
+-- Start Date=2016-01-01T15:42:29.905000Z, End Date=2016-01-31T23:59:58.995000Z
++ Creating tfrecords for 36 events
+Number of events written=28
++ Loading Stream GSOK029_9-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-09-01T00:00:00.005000Z, End Date=2014-09-30T23:59:58.995000Z
++ Creating tfrecords for 78 events
+Number of events written=78
++ Loading Stream GSOK027_12-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-12-01T00:00:00.005000Z, End Date=2014-12-14T21:24:49.070000Z
++ Creating tfrecords for 27 events
+Number of events written=5
++ Loading Stream GSOK029_10-2015.mseed
++ Preprocessing stream
+-- Start Date=2015-10-01T00:00:00.005000Z, End Date=2015-10-31T23:59:58.995000Z
++ Creating tfrecords for 23 events
+Number of events written=23
++ Loading Stream GSOK029_3-2014.mseed
++ Preprocessing stream
+-- Start Date=2014-03-01T00:00:00.005000Z, End Date=2014-03-31T23:59:58.995000Z
++ Creating tfrecords for 125 events
+Missing waveform for event: 2014-03-31T23:59:52.014129Z
+Number of events written=124
+Job End: Tue Nov 21 20:39:01 EST 2017

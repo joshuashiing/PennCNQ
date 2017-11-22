@@ -1,10 +1,10 @@
 #!/bin/bash
-#PBS -N Train
+#PBS -N Stream2Tf
 #PBS -M joshuashiing2011@gmail.com
 #PBS -m abe
 #PBS -A open
 #PBS -l nodes=1:ppn=1
-#PBS -l walltime=04:00:00
+#PBS -l walltime=12:00:00
 #PBS -j oe
 #PBS -o ./logs
 
@@ -13,6 +13,7 @@ echo "Job Begin: `date`"
 
 wkdir=/storage/home/gux8/work/Research/PennCNQ
 cd ${wkdir}
-./bin/train --dataset data/EvN/train --checkpoint_dir data/EvN/model --n_clusters 1
+
+./bin/preprocess/convert_stream_to_tfrecords.py --stream_path data/test_streams/GSOK027_7-2014.mseed --output_dir  data/EvN/test_set/GSOK027/tfrecords --window_size 10 --window_step 11 
 
 echo "Job End: `date`"

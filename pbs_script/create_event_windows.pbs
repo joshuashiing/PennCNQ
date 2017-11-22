@@ -13,6 +13,6 @@ echo "Job Begin: `date`"
 
 wkdir=/storage/home/gux8/work/Research/PennCNQ
 cd ${wkdir}
-./bin/preprocess/create_dataset_events.py --stream_dir data/streams --catalog data/EvN/catalog_with_cluster_ids.csv --output_dir data/EvN/EWin --save_mseed True
+./bin/preprocess/create_dataset_events.py --stream_dir data/streams --catalog data/EvN/catalog_with_cluster_ids.csv --output_dir data/EvN/EWin --save_mseed True --plot True
 
 echo "Job End: `date`"
