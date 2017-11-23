@@ -86,11 +86,17 @@ def main(args):
                                is_training=False)
             metrics = model.validation_metrics()
             # Validation summary writer
-            summary_writer = tf.train.SummaryWriter(summary_dir, None)
+            # GXTEST
+            # summary_writer = tf.train.SummaryWriter(summary_dir, None)
+            summary_writer = tf.summary.FileWriter(summary_dir, None)
+            # GXTEST
 
             with tf.Session() as sess:
                 coord = tf.train.Coordinator()
-                tf.initialize_local_variables().run()
+                # GXTEST
+                # tf.initialize_local_variables().run()
+                tf.local_variables_initializer().run()
+                # GXTEST
                 threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
                 model.load(sess,args.step)
