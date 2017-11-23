@@ -27,6 +27,11 @@
 # Train
 ./bin/train --dataset data/EvN/train --checkpoint_dir data/EvN/model --n_clusters 1
 
+# Evaluate during training
+./bin/evaluate --checkpoint_dir data/EvN/models/model_002/ConvNetQuake --dataset data/EvN/test_set/tfrecords/positive --eval_interval 10 --n_clusters 1 --events
+
+./bin/evaluate --checkpoint_dir data/EvN/models/model_002/ConvNetQuake --dataset data/EvN/test_set/tfrecords/negative --eval_interval 10 --n_clusters 1 --noise
+
 # Convert stream to tfrecords
 ./bin/preprocess/convert_stream_to_tfrecords.py --stream_path data/test_streams/GSOK027_7-2014.mseed --output_dir  data/EvN/cont_stream/GSOK027/tfrecords --window_size 10 --window_step 11
 

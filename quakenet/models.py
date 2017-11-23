@@ -95,7 +95,8 @@ class ConvNetQuake(tflib.model.BaseModel):
       # GXTEST
       raw_loss = tf.reduce_mean(
         tf.nn.sparse_softmax_cross_entropy_with_logits(labels=targets, logits=self.layers['logits']))
-      self.summaries.append(tf.summary.scalar('loss/train_raw', raw_loss))
+      # self.summaries.append(tf.summary.scalar('loss/train_raw', raw_loss))
+      self.summaries.append(tf.summary.scalar('train_raw', raw_loss))
       # GXTEST
 
     self.loss = raw_loss
@@ -105,7 +106,8 @@ class ConvNetQuake(tflib.model.BaseModel):
       with tf.name_scope('regularizers'):
         reg_loss = sum(reg_losses)
 	# GXTEST
-        self.summaries.append(tf.summary.scalar('loss/regularization', reg_loss))
+     #    self.summaries.append(tf.summary.scalar('loss/regularization', reg_loss))
+        self.summaries.append(tf.summary.scalar('regularization', reg_loss))
 	# GXTEST
       self.loss += reg_loss
 
