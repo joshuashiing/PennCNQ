@@ -241,6 +241,9 @@ def fc(inputs, nfilters, use_bias=True, activation_fn=tf.nn.relu,
       shape=[n_in, nfilters],
       dtype=inputs.dtype.base_dtype,
       initializer=initializer,
+      # GXTEST
+      collections=[tf.GraphKeys.WEIGHTS, tf.GraphKeys.GLOBAL_VARIABLES],
+      # GXTEST
       regularizer=regularizer)
 
     current_layer = tf.matmul(inputs, weights)

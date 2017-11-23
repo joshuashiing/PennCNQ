@@ -162,3 +162,35 @@ class ConvNetQuake(tflib.model.BaseModel):
 
     return toprint
 
+
+# GXTEST
+class ConvNetQuake_model_004(ConvNetQuake):
+  def _setup_prediction(self):
+    self.batch_size = self.inputs['data'].get_shape().as_list()[0]
+
+    current_layer = self.inputs['data']
+    c = 32  # number of channels per conv layer
+    ksize = 3  # size of the convolution kernel
+    depth = 8
+    for i in range(depth):
+      current_layer = layers.conv1(current_layer, c, ksize, stride=2, scope='conv{}'.format(i + 1), padding='SAME')
+      tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+      self.layers['conv{}'.format(i + 1)] = current_layer
+
+    bs, width, _ = current_layer.get_shape().as_list()
+    current_layer = tf.reshape(current_layer, [bs, width * c], name="reshape")
+
+    # Add a fully connected layer
+    current_layer = layers.fc(current_layer, 32, scope='fc1')
+
+    current_layer = layers.fc(current_layer, self.config.n_clusters, scope='logits', activation_fn=None)
+    self.layers['logits'] = current_layer
+    tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
+    self.layers['class_prob'] = tf.nn.softmax(current_layer, name='class_prob')
+    self.layers['class_prediction'] = tf.argmax(self.layers['class_prob'], 1, name='class_pred')
+
+    tf.contrib.layers.apply_regularization(
+      tf.contrib.layers.l2_regularizer(self.config.regularization),
+      weights_list=tf.get_collection(tf.GraphKeys.WEIGHTS))
+# GXTEST
