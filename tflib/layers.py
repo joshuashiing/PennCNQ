@@ -233,7 +233,8 @@ def conv3(inputs,
 
 def fc(inputs, nfilters, use_bias=True, activation_fn=tf.nn.relu,
        initializer=tf.contrib.layers.variance_scaling_initializer(),
-       regularizer=None, scope=None, reuse=None):
+       regularizer=None, scope=None, reuse=None, keep_prob=None):
+  # GXTEST: add keep_prob
   with tf.variable_scope(scope, reuse=reuse):
     n_in = inputs.get_shape().as_list()[-1]
     weights = tf.get_variable(
@@ -259,7 +260,13 @@ def fc(inputs, nfilters, use_bias=True, activation_fn=tf.nn.relu,
     if activation_fn is not None:
       current_layer = activation_fn(current_layer)
 
+    # GXTEST
+    if keep_prob:
+      current_layer = tf.nn.dropout(current_layer, keep_prob)
+    # GXTEST
+
   return current_layer
+
 
 def batch_norm(inputs, center=False, scale=False,
                decay=0.999, epsilon=0.001, reuse=None,
