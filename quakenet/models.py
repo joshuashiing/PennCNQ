@@ -197,7 +197,7 @@ class ConvNetQuake_model_004(ConvNetQuake):
 # GXTEST
 
 
-class ConvNetQuake_model_005(tflib.model.BaseModel):
+class ConvNetQuake_model_005(ConvNetQuake):
   # Try max-pooling instead of stride
 
   def _setup_prediction(self):
@@ -229,93 +229,3 @@ class ConvNetQuake_model_005(tflib.model.BaseModel):
         tf.contrib.layers.l2_regularizer(self.config.regularization),
         weights_list=tf.get_collection(tf.GraphKeys.WEIGHTS))
 
-
-  def validation_metrics(self):
-    if not hasattr(self, '_validation_metrics'):
-      self._setup_loss()
-
-      self._validation_metrics = {
-        'loss': self.loss,
-        'detection_accuracy': self.detection_accuracy,
-        'localization_accuracy': self.localization_accuracy
-      }
-    return self._validation_metrics
-
-  def validation_metrics_message(self, metrics):
-    s = 'loss = {:.5f} | det. acc. = {:.1f}% | loc. acc. = {:.1f}%'.format(metrics['loss'],
-     metrics['detection_accuracy']*100, metrics['localization_accuracy']*100)
-    return s
-
-  def _setup_loss(self):
-    with tf.name_scope('loss'):
-      # change target range from -1:n_clusters-1 to 0:n_clusters
-      targets = tf.add(self.inputs['cluster_id'], self.config.add)
-      # GXTEST
-      raw_loss = tf.reduce_mean(
-        tf.nn.sparse_softmax_cross_entropy_with_logits(labels=targets, logits=self.layers['logits']))
-      # self.summaries.append(tf.summary.scalar('loss/train_raw', raw_loss))
-      self.summaries.append(tf.summary.scalar('train_raw', raw_loss))
-      # GXTEST
-
-    self.loss = raw_loss
-
-    reg_losses = tf.get_collection(tf.GraphKeys.REGULARIZATION_LOSSES)
-    if reg_losses:
-      with tf.name_scope('regularizers'):
-        reg_loss = sum(reg_losses)
-	# GXTEST
-     #    self.summaries.append(tf.summary.scalar('loss/regularization', reg_loss))
-        self.summaries.append(tf.summary.scalar('regularization', reg_loss))
-	# GXTEST
-      self.loss += reg_loss
-
-    # GXTEST
-    self.summaries.append(tf.summary.scalar('loss/train', self.loss))
-    # GXTEST
-
-    with tf.name_scope('accuracy'):
-      is_true_event = tf.cast(tf.greater(targets, tf.zeros_like(targets)), tf.int64)
-      is_pred_event = tf.cast(tf.greater(self.layers['class_prediction'], tf.zeros_like(targets)), tf.int64)
-      detection_is_correct = tf.equal(is_true_event, is_pred_event)
-      is_correct = tf.equal(self.layers['class_prediction'], targets)
-      self.detection_accuracy = tf.reduce_mean(tf.to_float(detection_is_correct))
-      self.localization_accuracy = tf.reduce_mean(tf.to_float(is_correct))
-      # GXTEST
-      self.summaries.append(tf.summary.scalar('detection_accuracy/train', self.detection_accuracy))
-      self.summaries.append(tf.summary.scalar('localization_accuracy/train', self.localization_accuracy))
-      # GXTEST
-
-  def _setup_optimizer(self, learning_rate):
-    update_ops = tf.get_collection(tf.GraphKeys.UPDATE_OPS)
-    if update_ops:
-      updates = tf.group(*update_ops, name='update_ops')
-      with tf.control_dependencies([updates]):
-        self.loss = tf.identity(self.loss)
-    optim = tf.train.AdamOptimizer(learning_rate).minimize(
-        self.loss, name='optimizer', global_step=self.global_step)
-    self.optimizer = optim
-
-  def _tofetch(self):
-    return {
-        'optimizer': self.optimizer,
-        'loss': self.loss,
-        'detection_accuracy': self.detection_accuracy,
-        'localization_accuracy': self.localization_accuracy
-    }
-
-  def _summary_step(self, step_data):
-    step = step_data['step']
-    loss = step_data['loss']
-    det_accuracy = step_data['detection_accuracy']
-    loc_accuracy = step_data['localization_accuracy']
-    duration = step_data['duration']
-    avg_duration = 1000*duration/step
-
-    if self.is_training:
-      toprint ='Step {} | {:.0f}s ({:.0f}ms) | loss = {:.4f} | det. acc. = {:.1f}% | loc. acc. = {:.1f}%'.format(
-        step, duration, avg_duration, loss, 100*det_accuracy, 100*loc_accuracy)
-    else:
-      toprint ='Step {} | {:.0f}s ({:.0f}ms) | accuracy = {:.1f}% | accuracy = {:.1f}%'.format(
-        step, duration, avg_duration, 100*det_accuracy, 100*loc_accuracy)
-
-    return toprint
