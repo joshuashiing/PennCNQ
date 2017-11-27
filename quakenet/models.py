@@ -417,7 +417,7 @@ class ConvNetQuake_model_009(ConvNetQuake):
         weights_list=tf.get_collection(tf.GraphKeys.WEIGHTS))
 
 class ConvNetQuake_model_010(ConvNetQuake):
-  # Smaller VGG with double convs
+  # Shallower VGG with double convs
   def _setup_prediction(self):
     self.batch_size = self.inputs['data'].get_shape().as_list()[0]
 
@@ -428,24 +428,16 @@ class ConvNetQuake_model_010(ConvNetQuake):
 
     c_conv = c_conv1
     iconv = 1
-    ipool = 1
 
-    for i in range(7):
+    for i in range(5):
       current_layer = layers.conv1(current_layer, c_conv, ksize, stride=1, scope='conv{}'.format(iconv), padding='SAME')
       self.layers['conv{}'.format(iconv)] = current_layer
       iconv += 1
-      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=2, scope='conv{}'.format(iconv), padding='SAME')
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=3, scope='conv{}'.format(iconv), padding='SAME')
       self.layers['conv{}'.format(iconv)] = current_layer
       iconv += 1
       c_conv *= 2
       tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
-
-    current_layer = tf.layers.max_pooling1d(inputs=current_layer, pool_size=2,
-                                            strides=2, name='pool{}'.format(ipool), padding='SAME')
-    self.layers['pool{}'.format(ipool)] = current_layer
-    ipool += 1
-    tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
-
 
     bs, width, c_conv = current_layer.get_shape().as_list()
     current_layer = tf.reshape(current_layer, [bs, width*c_conv], name="reshape")
