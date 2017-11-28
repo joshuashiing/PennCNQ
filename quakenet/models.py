@@ -366,7 +366,7 @@ class ConvNetQuake_model_008(ConvNetQuake):
         weights_list=tf.get_collection(tf.GraphKeys.WEIGHTS))
 
 class ConvNetQuake_model_009(ConvNetQuake):
-  # VGGNet with strides
+  # VGGNet with strides without triple convs
   def _setup_prediction(self):
     self.batch_size = self.inputs['data'].get_shape().as_list()[0]
 
@@ -438,6 +438,59 @@ class ConvNetQuake_model_010(ConvNetQuake):
       iconv += 1
       c_conv *= 2
       tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
+    bs, width, c_conv = current_layer.get_shape().as_list()
+    current_layer = tf.reshape(current_layer, [bs, width*c_conv], name="reshape")
+
+    current_layer = layers.fc(current_layer, self.config.n_clusters, scope='logits', activation_fn=None)
+    self.layers['logits'] = current_layer
+    tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
+    self.layers['class_prob'] = tf.nn.softmax(current_layer, name='class_prob')
+    self.layers['class_prediction'] = tf.argmax(self.layers['class_prob'], 1, name='class_pred')
+
+    tf.contrib.layers.apply_regularization(
+        tf.contrib.layers.l2_regularizer(self.config.regularization),
+        weights_list=tf.get_collection(tf.GraphKeys.WEIGHTS))
+
+class ConvNetQuake_model_011(ConvNetQuake):
+  # VGGNet with strides
+  def _setup_prediction(self):
+    self.batch_size = self.inputs['data'].get_shape().as_list()[0]
+
+    current_layer = self.inputs['data']
+
+    c_conv1 = 8
+    ksize = 3
+
+    c_conv = c_conv1
+    iconv = 1
+
+    for i in range(3):
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=1, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=3, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+
+      c_conv *= 2
+      tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
+    for i in range(3):
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=1, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=1, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=2, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+
+      c_conv *= 2
+      tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
 
     bs, width, c_conv = current_layer.get_shape().as_list()
     current_layer = tf.reshape(current_layer, [bs, width*c_conv], name="reshape")
