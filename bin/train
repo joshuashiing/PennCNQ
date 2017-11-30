@@ -65,11 +65,19 @@ def main(args):
   model = models.get(args.model, samples,cfg, args.checkpoint_dir, is_training=True)
 
   # train loop
+  # GXTEST
+  # model.train(
+  #   args.learning_rate,
+  #   resume=args.resume,
+  #   profiling=args.profiling,
+  #   summary_step=10)
   model.train(
     args.learning_rate,
     resume=args.resume,
     profiling=args.profiling,
-    summary_step=10) 
+    summary_step=10,
+    checkpoint_step=200)
+  # GXTEST
 
 if __name__ == '__main__':
   parser = argparse.ArgumentParser()
