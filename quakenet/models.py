@@ -533,3 +533,68 @@ class ConvNetQuake_model_011(ConvNetQuake):
     tf.contrib.layers.apply_regularization(
         tf.contrib.layers.l2_regularizer(self.config.regularization),
         weights_list=tf.get_collection(tf.GraphKeys.WEIGHTS))
+
+class ConvNetQuake_model_012(ConvNetQuake):
+  # VGG-like net with fc of 128 neurons
+  def _setup_prediction(self):
+    self.batch_size = self.inputs['data'].get_shape().as_list()[0]
+
+    current_layer = self.inputs['data']
+
+    c_conv1 = 8
+    ksize = 3
+
+    c_conv = c_conv1
+    iconv = 1
+    ipool = 1
+
+    for i in range(3):
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=1, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=1, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+      current_layer = tf.layers.max_pooling1d(inputs=current_layer, pool_size=3,
+                                              strides=3, name='pool{}'.format(ipool), padding='SAME')
+      self.layers['pool{}'.format(ipool)] = current_layer
+      ipool += 1
+      c_conv *= 2
+      tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
+    for i in range(3):
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=1, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=1, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+      current_layer = layers.conv1(current_layer, c_conv, ksize, stride=1, scope='conv{}'.format(iconv), padding='SAME')
+      self.layers['conv{}'.format(iconv)] = current_layer
+      iconv += 1
+      current_layer = tf.layers.max_pooling1d(inputs=current_layer, pool_size=2,
+                                              strides=2, name='pool{}'.format(ipool), padding='SAME')
+      self.layers['pool{}'.format(ipool)] = current_layer
+      ipool += 1
+      c_conv *= 2
+      tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
+
+    bs, width, c_conv = current_layer.get_shape().as_list()
+    current_layer = tf.reshape(current_layer, [bs, width*c_conv], name="reshape")
+
+    # Add a fully connected layer
+    current_layer = layers.fc(current_layer, 128, scope='fc1')
+    self.layers['fc1'] = current_layer
+    tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
+    current_layer = layers.fc(current_layer, self.config.n_clusters, scope='logits', activation_fn=None)
+    self.layers['logits'] = current_layer
+    tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
+    self.layers['class_prob'] = tf.nn.softmax(current_layer, name='class_prob')
+    self.layers['class_prediction'] = tf.argmax(self.layers['class_prob'], 1, name='class_pred')
+
+    tf.contrib.layers.apply_regularization(
+        tf.contrib.layers.l2_regularizer(self.config.regularization),
+        weights_list=tf.get_collection(tf.GraphKeys.WEIGHTS))
