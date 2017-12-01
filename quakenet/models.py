@@ -181,6 +181,10 @@ class ConvNetQuake_model_003(ConvNetQuake):
     bs, width, _ = current_layer.get_shape().as_list()
     current_layer = tf.reshape(current_layer, [bs, width * c], name="reshape")
 
+    # GXTEST
+    self.layers['top_layer'] = current_layer
+    # GXTEST
+
     current_layer = layers.fc(current_layer, self.config.n_clusters, scope='logits', activation_fn=None)
     self.layers['logits'] = current_layer
     tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
@@ -339,6 +343,10 @@ class ConvNetQuake_model_007(ConvNetQuake):
 
     bs, width, c_conv = current_layer.get_shape().as_list()
     current_layer = tf.reshape(current_layer, [bs, width*c_conv], name="reshape")
+
+    # GXTEST
+    self.layers['top_layer'] = current_layer
+    # GXTEST
 
     current_layer = layers.fc(current_layer, self.config.n_clusters, scope='logits', activation_fn=None)
     self.layers['logits'] = current_layer
@@ -587,6 +595,10 @@ class ConvNetQuake_model_012(ConvNetQuake):
     current_layer = layers.fc(current_layer, 128, scope='fc1')
     self.layers['fc1'] = current_layer
     tf.add_to_collection(tf.GraphKeys.ACTIVATIONS, current_layer)
+
+    # GXTEST
+    self.layers['top_layer'] = current_layer
+    # GXTEST
 
     current_layer = layers.fc(current_layer, self.config.n_clusters, scope='logits', activation_fn=None)
     self.layers['logits'] = current_layer
