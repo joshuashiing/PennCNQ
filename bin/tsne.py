@@ -166,7 +166,7 @@ def tsne(X = Math.array([]), no_dims = 2, initial_dims = 50, perplexity = 30.0):
 
 
 if __name__ == "__main__":
-	output_dir = 'data/EvN/dis_models/model_007/output'
+	output_dir = 'data/EvN/dis_models/model_012/output'
 	fig_file = os.path.join(output_dir, 'tsne_plot.png')
 	neg_tl_file = os.path.join(output_dir, 'neg_top_layer.txt')
 	pos_tl_file = os.path.join(output_dir, 'pos_top_layer.txt')
